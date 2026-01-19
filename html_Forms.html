@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <form action="submitted.html" target="_blank" method="post" name="form1">
+        Place:<input type="text" name="place" required maxlength="15" value="hyderabad" size="5" readonly id="form1">
+        Password:<input type="password" minlength="3">
+        Email:<input type="email" name="email"><br><br>
+        Mobile:<input type="tel">
+        Age:<input type="number" max="50" step="5">
+        <input type="submit" value="Register">
+        <input type="button" value="check">
+        <input type="reset">
+        <input type="color"><br>
+        <input type="hidden"><br><br>
+
+        Gender
+        Female:<input type="radio" name="gender">
+        Male:<input type="radio" name="gender" checked><br>
+        Languages Known:<br>
+        English:<input type="checkbox" name="lang" value="en" checked>
+        Telugu:<input type="checkbox" name="lang" value="te">
+        Hindi:<input type="checkbox" name="lang" value="hi">
+
+        <input type="range">
+        <input type="date">
+        <input type="file"><br><br>
+        <input type="search">
+        <input type="time">
+        <input type="month">
+        <input type="datetime-local">
+        <input type="week">
+        <input type="url">
+
+        <br><br>
+        <textarea cols="3" rows="3" name="address">saddsfshshshs</textarea><br>
+        <select multiple size="2" name="lang">
+            <option selected value="en">English</option>
+            <option value="te">Telugu</option>
+            <option>Hindi</option>
+        </select>
+
+
+    </form>
+</body>
+
+</html>
