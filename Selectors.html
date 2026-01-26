@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: white;
+            background: green;
+
+        }
+
+        #second {
+            color: white;
+            background: pink;
+        }
+
+        .special {
+            color: white;
+            background: red;
+        }
+
+
+        div>p {
+            color: white;
+            background: blue;
+        }
+
+        div p {
+            color: white;
+            background: orange;
+        }
+
+        p+h3 {
+            color: white;
+            background: tomato;
+        }
+
+        p~h3 {
+            color: white;
+            background: indigo;
+        }
+
+        h2::first-letter {
+            text-transform: uppercase;
+            color: red;
+
+        }
+
+        p::first-line {
+            font-size: 25px;
+            background: burlywood;
+        }
+
+        h4::before {
+
+            content: "before element used";
+            color: aqua;
+        }
+
+        i::after {
+
+            content: "after element used";
+            color: palevioletred;
+        }
+
+        p::selection {
+            background: black;
+            color: white;
+        }
+
+        p[title] {
+            background: gold;
+            font-size: 25px;
+        }
+
+        p[title="paragraph"] {
+            background: salmon;
+            font-size: 25px;
+        }
+
+        p[title~="para"] {
+            background: skyblue;
+            font-size: 25px;
+        }
+
+        p[title ^="Time out"] {
+            background: skyblue;
+            font-size: 25px;
+        }
+
+        p[title $="Time out"] {
+            background: orange;
+            font-size: 25px;
+        }
+
+        b:hover {
+            background: pink;
+            color: white;
+        }
+
+        a:link {
+            color: pink;
+        }
+
+        p:target {
+            color: red;
+            background-color: yellow;
+        }
+
+        input:focus {
+            color: white;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>------1.Simple selectors start-------</h2>
+    <p>This is paragraph1</p>
+    <p>This is paragraph2</p>
+    <p id="second">This is paragraph3</p>
+    <p class="special">This is paragraph4</p>
+    <p class="special">This is paragraph5</p><br><br>
+
+    <h2>------2.Combinator selectors start---------</h2>
+    <div>
+        <p>This is paragraph in div</p>
+        <h2>
+            <p>This is paragraph in h2 tag</p>
+        </h2>
+    </div>
+    <div>
+        <p>This is paragraph1 in div</p>
+        <h3>This is heading tag in div</h3>
+        <h3>This is heading tag in div</h3>
+    </div>
+    <div>
+        <p>This is paragraph1 in div</p>
+        <h3>This is heading tag in div</h3>
+        <h3>This is heading tag in div</h3>
+    </div><br><br>
+
+    <h2>----3.Pseudo element selectors start------</h2>
+    <h2>this is heading tag1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus facere aperiam odit atque, excepturi<br>
+        dicta, reprehenderit rem nisi eligendi, maxime quia fugiat suscipit saepe ad libero totam mollitia dolor
+        aliquam.</p>
+    <h4>this is heading tag1</h4>
+    <i>this is heading tag1</i>
+
+    <h2>----4.Attribute element selectors start------</h2>
+    <p title>This is a paragraph1</p>
+    <p title="paragraph">This is a paragraph2</p>
+    <p title="para">This is a paragraph3</p>
+    <p title="para-">This is a paragraph4</p>
+    <p title="Time">This is a paragraph2</p>
+
+    <h2>----5.Pseudo class selectors start------</h2>
+    <b>Hover me</b><br>
+    <a href="https://www.amazon.in/" blank="_target">amazon</a><br>
+
+    <a href="#last">last</a>
+    <p id="first">The Number Game lecture introduces a two-player game and explains how to analyze it using game theory
+        concepts.
+        It focuses on identifying winning and losing positions through backward reasoning, forming optimal strategies,
+        and implementing solutions using recursion and dynamic programming. The lecture emphasizes logical
+        decision-making under optimal play rather than brute-force guessing.</p><br>
+    <p>The Number Game lecture introduces a two-player game and explains how to analyze it using game theory concepts.
+        It focuses on identifying winning and losing positions through backward reasoning, forming optimal strategies,
+        and implementing solutions using recursion and dynamic programming. The lecture emphasizes logical
+        decision-making under optimal play rather than brute-force guessing.</p><br>
+    <p>The Number Game lecture introduces a two-player game and explains how to analyze it using game theory concepts.
+        It focuses on identifying winning and losing positions through backward reasoning, forming optimal strategies,
+        and implementing solutions using recursion and dynamic programming. The lecture emphasizes logical
+        decision-making under optimal play rather than brute-force guessing.</p><br>
+    <p>The Number Game lecture introduces a two-player game and explains how to analyze it using game theory concepts.
+        It focuses on identifying winning and losing positions through backward reasoning, forming optimal strategies,
+        and implementing solutions using recursion and dynamic programming. The lecture emphasizes logical
+        decision-making under optimal play rather than brute-force guessing.</p><br>
+    <p id="last">The Number Game lecture introduces a two-player game and explains how to analyze it using game theory
+        concepts.
+        It focuses on identifying winning and losing positions through backward reasoning, forming optimal strategies,
+        and implementing solutions using recursion and dynamic programming. The lecture emphasizes logical
+        decision-making under optimal play rather than brute-force guessing.</p>
+    <a href="#first">first</a><br>
+    Number<input type="text">
+
+
+
+
+
+
+
+</body>
+
+</html>

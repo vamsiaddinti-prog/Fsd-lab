@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+    <title>CSS Selector Forms</title>
+    <style>
+        /* ===== SIMPLE SELECTORS ===== */
+
+        /* Element selector */
+        p {
+            color: blue;
+        }
+
+        /* ID selector */
+        #mainTitle {
+            color: red;
+            text-align: center;
+        }
+
+        /* Class selector */
+        .info {
+            font-size: 18px;
+            color: green;
+        }
+
+        /* Group selector */
+        h3,
+        h4 {
+            color: purple;
+        }
+
+        /* Universal selector */
+        * {
+            font-family: Arial;
+        }
+
+        /* ===== COMBINATORY SELECTORS ===== */
+
+        /* Descendant selector */
+        .container p {
+            color: brown;
+        }
+
+        /* Child selector */
+        .container>span {
+            color: orange;
+        }
+
+        /* Adjacent sibling selector */
+        h3+p {
+            color: darkcyan;
+        }
+
+        /* General sibling selector */
+        h4~p {
+            color: darkmagenta;
+        }
+
+        /* ===== PSEUDO-CLASS SELECTOR ===== */
+        a:hover {
+            color: red;
+        }
+
+        /* ===== PSEUDO-ELEMENT SELECTOR ===== */
+        .pseudo::first-letter {
+            font-size: 30px;
+            color: crimson;
+        }
+
+        /* ===== ATTRIBUTE SELECTOR ===== */
+        input[type="text"] {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="mainTitle">CSS Selector Forms Demo</h1>
+
+    <p class="info">This paragraph uses class selector.</p>
+    <p>This paragraph uses element selector.</p>
+
+    <div class="container">
+        <p>This is descendant selector example.</p>
+        <span>This is a child selector example.</span>
+    </div>
+
+    <h3>Adjacent Sibling Example</h3>
+    <p>This paragraph is adjacent sibling.</p>
+
+    <h4>General Sibling Example</h4>
+    <p>First sibling</p>
+    <p>Second sibling</p>
+
+    <a href="https://example.com" target="_blank">Hover on this link</a>
+
+    <p class="pseudo">Pseudo-element example text.</p>
+
+    <input type="text" placeholder="Attribute selector example">
+
+</body>
+
+</html>
