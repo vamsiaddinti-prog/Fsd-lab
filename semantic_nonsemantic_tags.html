@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Document</title>
+</head>
+<style>
+    section {
+        background-color: lightgrey;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    article {
+        background-color: grey;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    header,
+    footer {
+        background: linear-gradient(180deg, black, lightgrey);
+        color: white;
+        padding: 5px;
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    aside {
+        background-color: grey;
+        width: 150px;
+        text-align: center;
+        padding: 10px;
+        height: 10vh;
+        margin: 10px;
+        box-shadow: 0 0 10px black;
+    }
+
+    aside a {
+        display: block;
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    aside a:hover {
+        background-color: lightgrey;
+        color: black;
+    }
+
+    nav {
+        background-color: gray;
+        padding: 20px;
+        margin: 5px;
+        font-size: 20px;
+        display: inline-block;
+
+    }
+
+    nav a {
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 15px;
+    }
+
+    nav a:hover {
+        background-color: lightgrey;
+        color: black;
+    }
+
+    figure {
+        background-color: grey;
+        border: 2px solid black;
+        height: 300px;
+        width: 300px;
+        padding: 10px;
+        box-shadow: 0 0 10px black;
+        display: inline-block;
+        margin: 20px;
+    }
+
+    figure img {
+        width: 100%;
+        height: 100%
+    }
+
+    figcaption {
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .moviebox {
+        width: 300px;
+        display: inline-block;
+        margin: 20px;
+        padding: 10px;
+        box-shadow: 0 0 10px black;
+    }
+
+    span {
+        color: red;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Movies Hub</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">Animations</a>
+        <a href="#">Trending</a>
+        <a href="#">Sports</a>
+        <a href="#">Drama</a>
+    </nav>
+
+    <aside>
+        <a href="#">Continue Watching</a>
+        <a href="#">Recently Watched</a>
+        <a href="#">Downloads</a>
+        <a href="#">Trailers</a>
+    </aside>
+
+    <main>
+        <figure>
+            <img src="IMAGES/dancing-dave-minion-510835_640.jpg" alt="Kid movies">
+            <figcaption>Kid Movies</figcaption>
+        </figure>
+
+        <figure>
+            <img src="IMAGES/capitanamerica-2688069_640.jpg" alt="SuperHero movies">
+            <figcaption>SuperHero Movies</figcaption>
+        </figure>
+
+        <figure>
+            <img src="IMAGES/man-7291967_640.jpg" alt="Action movies">
+            <figcaption>Action Movies</figcaption>
+        </figure>
+
+        <figure>
+            <img src="IMAGES/jason-7715674_640.jpg" alt="Horror movies">
+            <figcaption><span>Horror</span> Movies</figcaption>
+        </figure>
+
+        <section>
+            <h2>Movies Information</h2>
+            <p>Welcome to Movies Information</p>
+
+            <article>
+                <h2>Hollywood Movies</h2>
+                <p>Welcome to Hollywood Movies Information</p>
+
+            </article>
+
+            <article>
+                <h2>Bollywood Movies</h2>
+                <p>Welcome to Bollywood Movies Information</p>
+
+            </article>
+
+            <article>
+                <h2>Tollywood Movies</h2>
+                <p>Welcome to <span>Tollywood</span> Movies Information</p>
+
+            </article>
+        </section>
+
+        <div class="moviebox">
+            <h2>Hollywood Movies</h2>
+            <p>This is Hollywood movies information</p>
+        </div>
+        <div class="moviebox">
+            <h2>Bollywood Movies</h2>
+            <p>This is Bollywood movies information</p>
+        </div>
+        <div class="moviebox">
+            <h2>Tollywood Movies</h2>
+            <p>This is <span>Tollywood</span> movies information</p>
+        </div>
+    </main>
+
+    <footer>
+        <h5>Copyright &copy;2022</h5>
+        <span>All Rights Reserved</span>
+    </footer>
+
+
+
+</body>
+
+</html>
