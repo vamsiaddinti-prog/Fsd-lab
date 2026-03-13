@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let x = "java script"  //primitive declaration of String variable but browser temperarily treat it as String object to apply String object methods
+
+        let y = new String(" makes webpage ") //creating String object by using String constructor function
+        // console.log(x)
+        // console.log(y)
+
+        let z = "dynamic"
+
+        console.log(x.charAt(7))
+
+        console.log(x.indexOf('a'))
+        console.log(x.indexOf('script'))
+        console.log(x.indexOf('saacript'))  //not ever existed so it returns -1
+
+        console.log(x.lastIndexOf('a'))
+
+        console.log(x.toLowerCase())
+        console.log(x.toUpperCase())
+
+        console.log(x.concat(y, z))
+
+        let a = "      Java Script      "
+        let b = "Html"
+        console.log(a, b)
+        console.log(a.trim(), b)
+
+        console.log(x.split('a'))
+
+        console.log(x.startsWith("j"))
+        console.log(x.startsWith("java"))  //yes it is used to identify words also
+        console.log(x.startsWith("jaaava"))
+        console.log(x.endsWith("a"))
+
+        console.log(x.length) //length is propert not method
+        console.log(x.slice(1, 6))
+        console.log(x.slice(-5, -1))
+
+        console.log(x.substring(1, 6))  //same as slic but olny works for positive values
+
+        console.log(x.substr(1, 5)) //from second index it prints 5 characters
+
+        console.log(x.includes("script"))
+
+        console.log(x.charCodeAt(3))
+
+        console.log(x.repeat(3))
+
+        console.log(x.replace("java", "python"))
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

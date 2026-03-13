@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Background Image Position</title>
+
+    <style>
+        body {
+            height: 200vh;
+            background-image: url("california.jpg");
+            background-repeat: no-repeat;
+            background-position: center 50%;
+            background-size: 50% auto;
+            background-attachment: fixed;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>Scroll the page to see the fixed background image</h2>
+
+</body>
+
+</html>
+
+
+
+<html>
+
+/*Okay — let’s go one by one in a very simple way.
+
+🌿 1. background-image: url("image.jpg");
+
+This sets the image you want as the background.
+
+👉 Replace image.jpg with your actual image file name or path.
+
+Example:
+
+If image is inside project folder → url("photo.png")
+
+If image is in another folder → url("images/photo.png")
+
+🌿 2. background-repeat: no-repeat;
+
+By default, background images repeat like tiles.
+
+👉 This property stops that repetition.
+
+Without it → image may appear many times.
+With it → image appears only once.
+
+🌿 3. background-position: center 50%;
+
+This controls where the image sits inside the page.
+
+It has two parts:
+
+First value → horizontal position → center
+→ Places image in the middle left-to-right.
+
+Second value → vertical position → 50%
+→ Places image halfway down the page.
+
+So together it means:
+👉 Image is horizontally centered
+👉 Image is vertically around middle height
+
+🌿 4. background-size: 54% auto;
+
+This controls image size.
+
+54% → image width becomes 54% of page width.
+
+auto → height adjusts automatically to keep image ratio.
+
+Think of it like:
+👉 Stretch width but don’t distort image.
+
+🌿 5. background-attachment: fixed;
+
+This is the most important part for your problem.
+
+👉 It makes the background image stay in the same place even when you scroll.
+
+Without it → image moves when page scrolls.
+With it → image looks “stuck” on screen.
+
+🌿 About height: 200vh;
+
+vh means viewport height.
+
+100vh = full visible screen height.
+
+200vh = twice the visible screen height.
+
+I used it only so you can test scrolling.*/
+</html>

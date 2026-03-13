@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #size {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            color: red;
+            transform: translateX(-50%);
+        }
+
+        @media screen and (max-width:800px) {
+            body {
+                background-color: green;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="text">Hello</div>
+    </div>
+
+    <div id="size"></div>
+
+
+
+    <script>
+        document.getElementById("size").innerText = "Width:1093px";
+    </script>
+</body>
+
+</html>

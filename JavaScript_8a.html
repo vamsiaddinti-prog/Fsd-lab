@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt("Enter first number");
+        let b = +prompt("Enter second number");
+        let c = +prompt("Enter third number");
+
+        if ((a == b) && (b == c)) {
+            alert(`ALL ARE EQUAL NUMBERS`);
+        }
+        else {
+            let largest = a;
+            if (b > largest) {
+                largest = b;
+            }
+            if (c > largest) {
+                largest = c;
+            }
+
+            alert(`${largest} LARGER NUMBER`);
+        }
+
+    </script>
+</body>
+
+</html>

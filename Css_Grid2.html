@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            height: 700px;
+            width: 1000px;
+            background-color: gray;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 1fr 2fr 1fr;
+            grid-gap: 20px;
+            box-sizing: border-box;
+
+        }
+
+        .header {
+            background-color: aqua;
+            grid-column: 1/4;
+
+        }
+
+        .navbar {
+            background-color: red;
+        }
+
+        .content {
+            background-color: orange;
+        }
+
+        .sidebar {
+            background-color: pink;
+        }
+
+        .footer {
+            background-color: gold;
+            grid-column: 1/4;
+        }
+
+        /* .container>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="navbar">navbar</div>
+        <div class="content">content</div>
+        <div class="sidebar">sidebar</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+
+</html>

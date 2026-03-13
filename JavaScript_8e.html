@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amstrong_Number</title>
+</head>
+
+<body>
+    <script>
+        let n = +prompt("Enter a number");
+        let original = n;
+
+        let sum = 0;
+
+        while (n > 0) {
+
+            let i = n % 10;
+
+            sum = sum + (i * i * i);
+
+            n = Math.floor(n / 10);
+        }
+
+        if (sum === original) {
+            document.write(`Given number ${original} is Amstrong number`)
+        }
+        else {
+            document.write(`Given number ${original} is not Amstrong number`)
+        }
+    </script>
+</body>
+
+</html>

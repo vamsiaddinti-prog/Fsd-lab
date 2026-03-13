@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // document.write("for in loop <br>");
+        // document.write("--------------------- <br>")
+        // fruits = ["apple", "banana", "kiwi"];
+        // for (let x in fruits) {
+        //     document.write(`${fruits[x]} <br>`);
+        // }
+        // document.write("<br>")
+
+        person = { name: 'Vamsi', age: 20, city: 'Guntur' }
+        for (let x in person) {
+            document.write(`${person[x]}<br>`);
+        }
+
+
+
+        for (let y of Object.Values(person)) {
+
+            document.write(`${y} <br>`);
+        }
+
+
+
+
+        // document.write("for of loop <br>");
+        // document.write("--------------------- <br>")
+        // for (let y of fruits) {
+        //     document.write(`${y} <br>`);
+        // }
+        // document.write("<br>")
+
+        // document.write("for each method <br>");
+        // document.write("--------------------- <br>")
+        // var salaries = [10000, 20000, 30000];
+        // salaries.forEach((salary, index, arr) => {
+        //     document.write(`salary ${salary} <br>`);
+
+        // })
+
+
+
+    </script>
+</body>
+
+</html>

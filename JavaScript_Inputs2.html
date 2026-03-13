@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <form>
+        <input type="text" id="name">
+        <button type="button" onclick="getInput()">Submit</button>
+    </form>
+
+    <h2 id="output"></h2>
+
+    <script>
+
+        function startProgram() {
+
+            let name = prompt("Enter your name by prompt()");
+            document.getElementById("output").innerText =
+                "Welcome " + name + " by prompt()";
+
+            // let result = confirm("Do you want to continue?");
+
+            // if(result){
+            //     document.getElementById("output").innerText =
+            //         "User selected OK";
+            // }
+            // else{
+            //     document.getElementById("output").innerText =
+            //         "User selected Cancel";
+            // }
+        }
+
+        startProgram(); // Runs once when page loads
+
+        function getInput() {
+            let name = document.getElementById("name").value;
+            alert(name);
+        }
+
+    </script>
+
+</body>
+
+</html>
